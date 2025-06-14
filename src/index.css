@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #f5f5f5;
+}
+body {
+  background: #f5f5f5;
+}
+
+@layer utilities {
+  .triangle-after {
+  }
+  .triangle-after::after {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: 0px;
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+    border-bottom: 19px solid #ffffff;
+  }
+}
